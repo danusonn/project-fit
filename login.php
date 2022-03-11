@@ -1,3 +1,5 @@
+<?php include('connect.php'); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
 <body>
@@ -20,17 +23,19 @@
             <div class="col-md-12">
                 <form action="login_connect.php" method="post">
                     <div class="form-group">
-                        <label for="email"><b>Username</b></label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="อีเมลหรือหมายเลขโทรศัพท์มือถือ">
+                        <label for="text"><b>Username</b></label>
+                        <input type="text" class="form-control" id="email" name="username"
+                            placeholder="อีเมลหรือชื่อผู้ใช้งาน">
                     </div><br>
                     <div class="form-group">
                         <label for="password"><b>Password</b></label>
-                        <input type="password" class="form-control" id="password" name="password" placeholder="รหัสผ่าน">
+                        <input type="password" class="form-control" id="password" name="password"
+                            placeholder="รหัสผ่าน">
                     </div><br>
-                    <button type="submit" class="btn btn-primary w-100">เข้าสู่ระบบ</button>
+                    <button type="submit" name="login_user" class="btn btn-primary w-100">เข้าสู่ระบบ</button>
                 </form>
                 <div class="row mt-2">
-                  <p>ยังไม่ใช่สมาชิก ? <a href="register.php">สมัครสมาชิกที่นี่</a></p>
+                    <p>ยังไม่ใช่สมาชิก ? <a href="register.php">สมัครสมาชิกที่นี่</a></p>
                 </div>
             </div>
         </div>

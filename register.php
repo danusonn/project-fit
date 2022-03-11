@@ -14,18 +14,18 @@
 <body>
     <div class="container w-50 mt-5 shadow p-3 mb-5 bg-white rounded">
         <h3 class="mb-4 pb-2 pb-md-0 mb-md-5"><b>สมัครสมาชิก</b></h3>
-        <form>
+        <form action="reg_connect.php" method="post">
             <div class="row">
                 <div class="col-md-6 mb-4">
                     <div class="form-outline">
                         <label class="form-label" for="firstName"><b>ชื่อ</b></label>
-                        <input type="text" id="firstName" class="form-control" placeholder="กรอกชื่อ">
+                        <input type="text" id="firstName" name="firstName" class="form-control" placeholder="กรอกชื่อ">
                     </div>
                 </div>
                 <div class="col-md-6 mb-4">
                     <div class="form-outline">
                         <label class="form-label" for="lastName"><b>นามสกุล</b></label>
-                        <input type="text" id="lastName" class="form-control" placeholder="กรอกนามสกุล">
+                        <input type="text" id="lastName" name="lastName" class="form-control" placeholder="กรอกนามสกุล">
                     </div>
                 </div>
             </div>
@@ -33,7 +33,7 @@
                 <div class="col-md-6 mb-4 d-flex align-items-center">
                     <div class="form-outline datepicker w-100">
                         <label for="birthdayDate" class="form-label"><b>วันเกิด</b></label>
-                        <input type="date" class="form-control" id="birthdayDate" />
+                        <input type="date" name="birthdayDate" class="form-control" id="birthdayDate" />
                     </div>
                 </div>
                 <div class="col-md-6 mb-4">
@@ -57,38 +57,45 @@
                 <div class="col-md-6 mb-4 pb-2">
                     <div class="form-outline">
                         <label class="form-label" for="emailAddress"><b>อีเมล</b></label>
-                        <input type="email" id="emailAddress" class="form-control "
-                            placeholder="กรอกอีเมลติดต่อ">
+                        <input type="email" id="emailAddress" name="emailAddress" class="form-control " placeholder="กรอกอีเมลติดต่อ">
                     </div>
                 </div>
                 <div class="col-md-6 mb-4 pb-2">
                     <div class="form-outline">
                         <label class="form-label" for="phoneNumber"><b>เบอร์โทรศัพท์</b></label>
-                        <input type="tel" id="phoneNumber" class="form-control"
-                            placeholder="กรอกเบอร์โทรศัพท์">
+                        <input type="tel" id="phoneNumber" name="phoneNumber" class="form-control" placeholder="กรอกเบอร์โทรศัพท์">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-4 pb-2 w-100">
+                    <div class="form-outline">
+                        <label class="form-label" for="username"><b>ชื่อผู้ใช้งาน</b></label>
+                        <input type="text" id="username" name="username" class="form-control" placeholder="กรอกชื่อผู้ใช้งาน">
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 mb-4 pb-2">
                     <div class="form-outline">
-                        <label class="form-label" for="username"><b>ชื่อผู้ใช้งาน</b></label>
-                        <input type="text" id="username" class="form-control"
-                            placeholder="กรอกชื่อผู้ใช้งาน">
+                        <label class="form-label" for="password"><b>รหัสผ่าน</b></label>
+                        <input type="password" id="password1" name="password1" class="form-control" placeholder="กรอกรหัสผ่าน">
                     </div>
                 </div>
                 <div class="col-md-6 mb-4 pb-2">
                     <div class="form-outline">
-                        <label class="form-label" for="password"><b>รหัสผ่าน</b></label>
-                        <input type="password" id="password" class="form-control"
-                            placeholder="กรอกรหัสผ่าน">
+                        <label class="form-label" for="password"><b>ยืนยันรหัสผ่าน</b></label>
+                        <input type="password" id="password2" name="password2" class="form-control" placeholder="ยืนยันรหัสผ่าน">
                     </div>
                 </div>
             </div>
             <div class="form-group ">
-                <input class="btn btn-primary" type="submit" value="ยืนยัน">
+                <input class="btn btn-primary w-100" type="submit" name="reg_user" value="ยืนยัน">
             </div>
         </form>
+        <div class="row mt-2">
+            <p>เป็นสมาชิกเเล้ว ? <a href="login.php">เข้าสู่ระบบที่นี่</a></p>
+        </div>
     </div>
 </body>
 
