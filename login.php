@@ -27,7 +27,7 @@
                         <label for="password"><b>Password</b></label>
                         <input type="password" class="form-control" id="password" name="password" placeholder="รหัสผ่าน">
                     </div><br>
-                    <button type="submit" class="btn btn-primary w-100">Login</button>
+                    <button type="submit" class="btn btn-primary w-100">เข้าสู่ระบบ</button>
                 </form>
                 <div class="row mt-2">
                   <p>ยังไม่ใช่สมาชิก ? <a href="register.php">สมัครสมาชิกที่นี่</a></p>
