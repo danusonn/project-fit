@@ -24,13 +24,13 @@
                                 <div class="row">
                                     <div class="col-md-6 mb-4">
                                         <div class="form-outline">
-                                            <input type="text" id="firstName" class="form-control form-control-lg" />
+                                            <input type="text" id="firstName" class="form-control form-control-lg" placeholder="กรอกชื่อ">
                                             <label class="form-label" for="firstName"><b>ชื่อ</b></label>
                                         </div>
                                     </div>
                                     <div class="col-md-6 mb-4">
                                         <div class="form-outline">
-                                            <input type="text" id="lastName" class="form-control form-control-lg" />
+                                            <input type="text" id="lastName" class="form-control form-control-lg" placeholder="กรอกนามสกุล">
                                             <label class="form-label" for="lastName"><b>นามสกุล</b></label>
                                         </div>
                                     </div>
@@ -65,13 +65,13 @@
                                     <div class="col-md-6 mb-4 pb-2">
                                         <div class="form-outline">
                                             <input type="email" id="emailAddress"
-                                                class="form-control form-control-lg" />
+                                                class="form-control form-control-lg" placeholder="กรอกอีเมลติดต่อ">
                                             <label class="form-label" for="emailAddress"><b>อีเมล</b></label>
                                         </div>
                                     </div>
                                     <div class="col-md-6 mb-4 pb-2">
                                         <div class="form-outline">
-                                            <input type="tel" id="phoneNumber" class="form-control form-control-lg" />
+                                            <input type="tel" id="phoneNumber" class="form-control form-control-lg" placeholder="กรอกเบอร์โทรศัพท์">
                                             <label class="form-label" for="phoneNumber"><b>เบอร์โทรศัพท์</b></label>
                                         </div>
                                     </div>
@@ -80,13 +80,13 @@
                                 <div class="col-md-6 mb-4 pb-2">
                                         <div class="form-outline">
                                             <input type="text" id="username"
-                                                class="form-control form-control-lg" />
+                                                class="form-control form-control-lg" placeholder="กรอกชื่อผู้ใช้งาน">
                                             <label class="form-label" for="username"><b>ชื่อผู้ใช้งาน</b></label>
                                         </div>
                                     </div>
                                     <div class="col-md-6 mb-4 pb-2">
                                         <div class="form-outline">
-                                            <input type="password" id="password" class="form-control form-control-lg" />
+                                            <input type="password" id="password" class="form-control form-control-lg" placeholder="กรอกรหัสผ่าน">
                                             <label class="form-label" for="password"><b>รหัสผ่าน</b></label>
                                         </div>
                                     </div>
