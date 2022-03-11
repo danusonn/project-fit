@@ -1,0 +1,16 @@
+.error {
+    background: #F2DEDE;
+    color: #A94442;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
