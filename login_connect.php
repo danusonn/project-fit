@@ -2,7 +2,6 @@
 session_start();
 include "connect.php";
 
-   FIXME: 
 if(isset($_POST['username']) && isset($_POST['password'])) {
 
     function validate($data){
@@ -11,8 +10,6 @@ if(isset($_POST['username']) && isset($_POST['password'])) {
         $data = htmlspecialchars($data);
         return $data;
     }
-
-    FIXME: 
 
     $username = validate($_POST['username']);
     $password = validate($_POST['password']);

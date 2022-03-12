@@ -23,9 +23,11 @@
         <div class="row">
             <div class="col-md-12">
                 <form action="login_connect.php" method="post">
+
                     <?php if(isset($_GET['error'])) { ?>
                         <p class="error"><?php echo $_GET['error']; ?></p>
                     <?php } ?>
+                    
                     <div class="form-group">
                         <label for="text"><b>Username</b></label>
                         <input type="text" class="form-control" name="username"
