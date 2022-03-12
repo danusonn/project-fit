@@ -18,7 +18,6 @@ if(isset($_SESSION['id']) && isset($_SESSION['username'])){
 </head>
 <body>
 
-
 <nav class="navbar navbar-expand-lg navbar-light bg-secondary text-light">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
